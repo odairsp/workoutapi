@@ -5,7 +5,7 @@ from contrib import BaseModel
 
 class AtletaModel(BaseModel):
     
-    __tablename__='atletas'
+    __tablename__='atletas' 
     
     pk_id: Mapped[int] = mapped_column(Integer, primary_key=True)
     nome: Mapped[str] = mapped_column(String(50), nullable=False)
